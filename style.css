@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.MainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: orange;
+}
+.TopBar{
+    height: 50px;
+    width: 100%;
+    margin-top: 0px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.23);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.1px);
+    -webkit-backdrop-filter: blur(15.1px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.Burger{
+    height: 100%;
+    width: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
