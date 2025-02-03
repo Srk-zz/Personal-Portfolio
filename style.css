@@ -45,15 +45,52 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 20px
+    font-size: 20px;
+    position: relative;
 }
 nav ul li a::after{
     content: '';
-    width: 100%;
+    width: 0;
     height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 150ms;
+
     
-    
+}
+nav ul li a:hover::after{
+    width:100%;
 }
 .container{
     padding: 10px 10%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+    
+}
+
+
+#about{
+    padding: 80px 0px;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col1{
+    flex-basis: 35%;
+}
+.about-col1 img{
+    width: 100%;
+    border-radius: 12px;
 }
